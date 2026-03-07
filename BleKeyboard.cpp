@@ -103,23 +103,21 @@ BleKeyboard::BleKeyboard(String deviceName, String deviceManufacturer, uint8_t b
 
 void BleKeyboard::begin(void)
 {
-	 Serial.println("Test0");
-  BLEDevice::init(deviceName);
-  BLEServer* pServer = BLEDevice::createServer();
-  pServer->setCallbacks(this);
- Serial.println("Test1");
-  hid = new BLEHIDDevice(pServer);
-  inputKeyboard = hid->inputReport(KEYBOARD_ID);  // <-- input REPORTID from report map
-  outputKeyboard = hid->outputReport(KEYBOARD_ID);
-  inputMediaKeys = hid->inputReport(MEDIA_KEYS_ID);
+	Serial.println(deviceName);
+  	BLEDevice::init(deviceName);
+  	BLEServer* pServer = BLEDevice::createServer();
+  	pServer->setCallbacks(this);
+	hid = new BLEHIDDevice(pServer);
+	//hid->startServices();
+	inputKeyboard = hid->inputReport(KEYBOARD_ID);  // <-- input REPORTID from report map
+  	outputKeyboard = hid->outputReport(KEYBOARD_ID);
+  	inputMediaKeys = hid->inputReport(MEDIA_KEYS_ID);
 
-  outputKeyboard->setCallbacks(this);
+  	outputKeyboard->setCallbacks(this);
 
-  //hid->manufacturer()->setValue(deviceManufacturer);
-  hid->manufacturer(deviceManufacturer);
-Serial.println("Test2");
-  hid->pnp(0x02, vid, pid, version);
-  hid->hidInfo(0x00, 0x01);
+  	hid->manufacturer()->setValue(deviceManufacturer);
+  	hid->pnp(0x02, vid, pid, version);
+  	hid->hidInfo(0x00, 0x01);
 
 
 #if defined(USE_NIMBLE)

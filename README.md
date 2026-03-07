@@ -15,7 +15,8 @@ You might also be interested in:
 ## Features
  - [ ] Optimization with NumBLE
  - [ ] Works for 3.3.7
- - [x] Works for 3.3.0
+ - [ ] Works for 3.3.5
+ - [x] Works for 3.0.0
  - [x] Send key strokes
  - [x] Send text
  - [x] Press/release individual keys
