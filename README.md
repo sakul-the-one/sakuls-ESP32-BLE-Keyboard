@@ -1,13 +1,21 @@
 # ESP32 BLE Keyboard library
 
+## hey, why are you stealing it from T-vk?
+Simple: He disappeared and I need this code to work on the newest version. I will be happy if he returns, but until then Im gonna try to maintain this thing here. I also added some optimisation by me
+# works NOT on esp32 3.3.7!
+why not for newest version? [Thats why](https://www.reddit.com/r/esp32/comments/1r5iudt/how_do_i_fix_this_error/)
+
 This library allows you to make the ESP32 act as a Bluetooth Keyboard and control what it does.  
 You might also be interested in:
 - [ESP32-BLE-Mouse](https://github.com/T-vK/ESP32-BLE-Mouse)
 - [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
+- [Original Code](https://github.com/T-vK/ESP32-BLE-Keyboard)
 
 
 ## Features
-
+ - [ ] Optimization with NumBLE
+ - [ ] Works for 3.3.7
+ - [x] Works for 3.3.0
  - [x] Send key strokes
  - [x] Send text
  - [x] Press/release individual keys
@@ -113,7 +121,8 @@ There is also a `setDelay` method to set a delay between each key event. E.g. `b
 This feature is meant to compensate for some applications and devices that can't handle fast input and will skip letters if too many keys are sent in a small time frame.  
 
 ## NimBLE-Mode
-The NimBLE mode enables a significant saving of RAM and FLASH memory.
+~~The NimBLE mode enables a significant saving of RAM and FLASH memory.~~
+**Not working yet. Needs to be reimplemented again!**
 
 ### Comparison (SendKeyStrokes.ino at compile-time)
 
