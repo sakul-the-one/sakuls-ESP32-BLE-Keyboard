@@ -501,8 +501,12 @@ size_t BleKeyboard::write(const uint8_t *buffer, size_t size) {
 	}
 	return n;
 }
-
-void BleKeyboard::onConnect(BLEServer* pServer) {
+#ifndef USE_NIMBLE
+void BleKeyboard::onConnect(BLEServer* pServer) 
+#else 
+void BleKeyboard::onConnect(BLEServer* pServer, NimBLEConnInfo& connInfo) 
+#endif
+{
   this->connected = true;
 
 #if !defined(USE_NIMBLE)
@@ -515,8 +519,12 @@ void BleKeyboard::onConnect(BLEServer* pServer) {
 #endif // !USE_NIMBLE
 
 }
-
-void BleKeyboard::onDisconnect(BLEServer* pServer) {
+#ifndef USE_NIMBLE
+void BleKeyboard::onDisconnect(BLEServer* pServer)
+#else 
+void BleKeyboard::onDisconnect(BLEServer* pServer, NimBLEConnInfo& connInfo, int reason)
+#endif
+{
   this->connected = false;
 
 #if !defined(USE_NIMBLE)
@@ -530,8 +538,12 @@ void BleKeyboard::onDisconnect(BLEServer* pServer) {
 
 #endif // !USE_NIMBLE
 }
-
-void BleKeyboard::onWrite(BLECharacteristic* me) {
+#ifndef USE_NIMBLE
+void BleKeyboard::onWrite(BLECharacteristic* me)
+#else
+void BleKeyboard::onWrite(BLECharacteristic* me, NimBLEConnInfo& connInfo)
+#endif
+{
   uint8_t* value = (uint8_t*)(me->getValue().c_str());
   (void)value;
   ESP_LOGI(LOG_TAG, "special keys: %d", *value);

@@ -13,9 +13,9 @@ You might also be interested in:
 
 
 ## Features
- - [ ] Optimization with NumBLE
+ - [x] Optimization with NumBLE
  - [ ] Works for 3.3.7
- - [ ] Works for 3.3.5
+ - [x] Works for 3.3.5
  - [x] Works for 3.0.0
  - [x] Send key strokes
  - [x] Send text
@@ -41,6 +41,8 @@ You might also be interested in:
 /**
  * This example turns the ESP32 into a Bluetooth LE keyboard that writes the words, presses Enter, presses a media key and then Ctrl+Alt+Delete
  */
+/*Uncomment this Line below this comment to use Nimble and safe some space*/
+//#define USE_NIMBLE 
 #include <BleKeyboard.h>
 
 BleKeyboard bleKeyboard;
@@ -67,20 +69,20 @@ void loop() {
     bleKeyboard.write(KEY_MEDIA_PLAY_PAUSE);
 
     delay(1000);
-    
+
    //
    // Below is an example of pressing multiple keyboard modifiers 
-   // which by default is commented out. 
-   // 
-   /* Serial.println("Sending Ctrl+Alt+Delete...");
+   // which by default is commented out.
+    /*
+    Serial.println("Sending Ctrl+Alt+Delete...");
     bleKeyboard.press(KEY_LEFT_CTRL);
     bleKeyboard.press(KEY_LEFT_ALT);
     bleKeyboard.press(KEY_DELETE);
     delay(100);
     bleKeyboard.releaseAll();
     */
-
   }
+
   Serial.println("Waiting 5 seconds...");
   delay(5000);
 }
@@ -124,23 +126,24 @@ This feature is meant to compensate for some applications and devices that can't
 ## NimBLE-Mode
 ~~The NimBLE mode enables a significant saving of RAM and FLASH memory.~~
 **Not working yet. Needs to be reimplemented again!**
+ you need the NimBLE-Arduino Libary by h2zero. This can also be found in the standard Libary Manager in the Arduino IDE
 
 ### Comparison (SendKeyStrokes.ino at compile-time)
-
+Updated on the 3.3.5 Standart. I have no idea why it takes so much space:
 **Standard**
 ```
-RAM:   [=         ]   9.3% (used 30548 bytes from 327680 bytes)
-Flash: [========  ]  75.8% (used 994120 bytes from 1310720 bytes)
+RAM:   [=         ]  12% (used 39980 bytes from 327680 bytes)
+Flash: [========  ]  83% (used 1089819 bytes from 1310720 bytes)
 ```
 
 **NimBLE mode**
 ```
-RAM:   [=         ]   8.3% (used 27180 bytes from 327680 bytes)
-Flash: [====      ]  44.2% (used 579158 bytes from 1310720 bytes)
+RAM:   [=         ]  12% (used 40964 bytes from 327680 bytes)
+Flash: [========= ]  85% (used 1126287 bytes from 1310720 bytes)
 ```
 
 ### Comparison (SendKeyStrokes.ino at run-time)
-
+Not Updated:
 |   | Standard | NimBLE mode | difference
 |---|--:|--:|--:|
 | `ESP.getHeapSize()`   | 296.804 | 321.252 | **+ 24.448**  |
@@ -154,7 +157,7 @@ Uncomment the first line in BleKeyboard.h
 ```C++
 #define USE_NIMBLE
 ```
-
+Or paste this line before the include!
 ### PlatformIO:
 Change your `platformio.ini` to the following settings
 ```ini
