@@ -105,7 +105,6 @@ BleKeyboard::BleKeyboard(String deviceName, String deviceManufacturer, uint8_t b
 
 void BleKeyboard::begin(void)
 {
-	Serial.println(deviceName);
   	BLEDevice::init(deviceName);
   	BLEServer* pServer = BLEDevice::createServer();
   	pServer->setCallbacks(this);
@@ -137,7 +136,6 @@ void BleKeyboard::begin(void)
   hid->startServices();
 
   onStarted(pServer);
-Serial.println("Test3");
   advertising = pServer->getAdvertising();
   advertising->setAppearance(HID_KEYBOARD);
   advertising->addServiceUUID(hid->hidService()->getUUID());
@@ -146,7 +144,6 @@ Serial.println("Test3");
   hid->setBatteryLevel(batteryLevel);
 
   ESP_LOGD(LOG_TAG, "Advertising started!");
-  Serial.println("Test4");
 }
 
 void BleKeyboard::end(void)
