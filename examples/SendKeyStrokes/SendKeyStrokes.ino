@@ -1,8 +1,6 @@
 /**
  * This example turns the ESP32 into a Bluetooth LE keyboard that writes the words, presses Enter, presses a media key and then Ctrl+Alt+Delete
  */
-/*Uncomment this Line below this comment to use Nimble and safe some space*/
-//#define USE_NIMBLE 
 #include <BleKeyboard.h>
 
 BleKeyboard bleKeyboard;
