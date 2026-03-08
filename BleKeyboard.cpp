@@ -97,11 +97,19 @@ static const uint8_t _hidReportDescriptor[] = {
   END_COLLECTION(0)                  // END_COLLECTION
 };
 
-BleKeyboard::BleKeyboard(String deviceName, String deviceManufacturer, uint8_t batteryLevel) 
+#if defined(USE_NIMBLE)
+  	BleKeyboard::BleKeyboard(std::string deviceName, std::string deviceManufacturer, uint8_t batteryLevel)
+      : hid(0)
+    , deviceName(deviceName.substr(0, 15))
+    , deviceManufacturer(deviceManufacturer.substr(0,15))
+    , batteryLevel(batteryLevel) {}
+#else
+  	BleKeyboard::BleKeyboard(String deviceName, String deviceManufacturer, uint8_t batteryLevel) 
     : hid(0)
     , deviceName(deviceName.substring(0, 15))
     , deviceManufacturer(deviceManufacturer.substring(0,15))
     , batteryLevel(batteryLevel) {}
+#endif
 
 void BleKeyboard::begin(void)
 {
@@ -162,10 +170,18 @@ void BleKeyboard::setBatteryLevel(uint8_t level) {
 }
 
 //must be called before begin in order to set the name
-void BleKeyboard::setName(String deviceName) {
-  this->deviceName = deviceName;
+#if defined(USE_NIMBLE)
+void BleKeyboard::setName(std::string deviceName)
+{  
+	this->deviceName = deviceName.substr(0, 15);
 }
-
+#else
+void BleKeyboard::setName(String deviceName)
+{
+	this->deviceName = deviceName.substring(0, 15);
+}
+#endif
+//substr
 /**
  * @brief Sets the waiting time (in milliseconds) between multiple keystrokes in NimBLE mode.
  * 
