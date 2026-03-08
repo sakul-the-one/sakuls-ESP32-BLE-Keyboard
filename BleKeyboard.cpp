@@ -1,3 +1,5 @@
+//#pragma warning (push)
+//#pragma warning (disable : 4068 ) /* disable unknown pragma warnings. especially the Bluthoot onces */
 #include "BleKeyboard.h"
 
 #if defined(USE_NIMBLE)
@@ -559,3 +561,4 @@ void BleKeyboard::delay_ms(uint64_t ms) {
     while(esp_timer_get_time() < e) {}
   }
 }
+//#pragma warning( pop )

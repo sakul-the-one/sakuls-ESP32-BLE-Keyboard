@@ -3,6 +3,9 @@
 
 #ifndef ESP32_BLE_KEYBOARD_H
 #define ESP32_BLE_KEYBOARD_H
+//#pragma message ("Supressing Bluethoot Warning: 'BT: forcing BR/EDR max sync conn eff to 1 (Bluedroid HFP requires SCO/eSCO)'")
+//#pragma warning( push )
+//#pragma warning (disable : 4068 ) /* disable unknown pragma warnings. especially the Bluthoot onces */
 #include "sdkconfig.h"
 #if defined(CONFIG_BT_ENABLED)
 
@@ -189,4 +192,5 @@ protected:
 };
 
 #endif // CONFIG_BT_ENABLED
+//#pragma warning( pop )
 #endif // ESP32_BLE_KEYBOARD_H

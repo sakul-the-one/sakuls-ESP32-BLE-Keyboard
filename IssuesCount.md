@@ -1,8 +1,155 @@
 # Issues count
-### The original project had 240 issues. This is a list, to see which is already resolved
- -  [x] Issue #240
+### The original project had 240 active issues. This is a list, to see which issues already have been resolved in this fork
+ -  [x] Issue #387
+ -  [ ] Issue #386
+ -  [ ] Issue #385
+ -  [ ] Issue #384
+ -  [ ] Issue #383
+ -  [ ] Issue #382
+ -  [ ] Issue #381
+ -  [ ] Issue #380
+ -  [ ] Issue #379
+ -  [x] Issue #378
+ -  [ ] Issue #377
+ -  [ ] Issue #376
+ -  [ ] Issue #375
+ -  [x] Issue #374
+ -  [ ] Issue #373
+ -  [ ] Issue #372
+ -  [x] Issue #371 (duplicate)
+ -  [ ] Issue #370
+ -  [ ] Issue #369
+ -  [ ] Issue #368
+ -  [ ] Issue #367
+ -  [ ] Issue #366
+ -  [ ] Issue #365
+ -  [ ] Issue #364
+ -  [ ] Issue #363
+ -  [ ] Issue #362
+ -  [ ] Issue #361
+ -  [ ] Issue #360
+ -  [ ] Issue #359
+ -  [ ] Issue #358
+ -  [x] Issue #357
+ -  [ ] Issue #356
+ -  [ ] Issue #355
+ -  [ ] Issue #354
+ -  [ ] Issue #353
+ -  [x] Issue #352
+ -  [ ] Issue #351
+ -  [x] Issue #350
+ -  [ ] Issue #349
+ -  [x] Issue #348
+ -  [ ] Issue #347
+ -  [ ] Issue #346
+ -  [ ] Issue #345
+ -  [ ] Issue #344
+ -  [ ] Issue #343
+ -  [ ] Issue #342
+ -  [ ] Issue #341
+ -  [ ] Issue #340
+ -  [x] Issue #339
+ -  [ ] Issue #338
+ -  [ ] Issue #337
+ -  [ ] Issue #336
+ -  [x] Issue #335
+ -  [x] Issue #334
+ -  [ ] Issue #333
+ -  [ ] Issue #332
+ -  [x] Issue #331
+ -  [ ] Issue #330
+ -  [ ] Issue #329
+ -  [ ] Issue #328
+ -  [ ] Issue #327
+ -  [ ] Issue #326
+ -  [ ] Issue #325
+ -  [ ] Issue #324
+ -  [ ] Issue #323
+ -  [ ] Issue #322
+ -  [ ] Issue #321
+ -  [x] Issue #320
+ -  [ ] Issue #319
+ -  [ ] Issue #318
+ -  [ ] Issue #317
+ -  [ ] Issue #316
+ -  [ ] Issue #315
+ -  [ ] Issue #314
+ -  [ ] Issue #313
+ -  [ ] Issue #312
+ -  [ ] Issue #311
+ -  [x] Issue #310
+ -  [x] Issue #309
+ -  [ ] Issue #308
+ -  [ ] Issue #307
+ -  [ ] Issue #306
+ -  [ ] Issue #305
+ -  [ ] Issue #304
+ -  [ ] Issue #303
+ -  [ ] Issue #302
+ -  [ ] Issue #301
+ -  [ ] Issue #300
+ -  [ ] Issue #299
+ -  [ ] Issue #298
+ -  [ ] Issue #297
+ -  [ ] Issue #296
+ -  [ ] Issue #295
+ -  [ ] Issue #294
+ -  [ ] Issue #293
+ -  [ ] Issue #292
+ -  [ ] Issue #291
+ -  [ ] Issue #290
+ -  [ ] Issue #289
+ -  [ ] Issue #288
+ -  [ ] Issue #287
+ -  [x] Issue #286
+ -  [ ] Issue #285
+ -  [x] Issue #284
+ -  [ ] Issue #283
+ -  [ ] Issue #282
+ -  [ ] Issue #281
+ -  [ ] Issue #280
+ -  [ ] Issue #279
+ -  [ ] Issue #278
+ -  [ ] Issue #277
+ -  [ ] Issue #276
+ -  [ ] Issue #275
+ -  [ ] Issue #274
+ -  [x] Issue #273
+ -  [ ] Issue #272
+ -  [ ] Issue #271
+ -  [ ] Issue #270
+ -  [ ] Issue #269
+ -  [ ] Issue #268
+ -  [ ] Issue #267
+ -  [ ] Issue #266
+ -  [x] Issue #265
+ -  [ ] Issue #264
+ -  [ ] Issue #263
+ -  [x] Issue #262
+ -  [ ] Issue #261
+ -  [ ] Issue #260
+ -  [x] Issue #259
+ -  [ ] Issue #258
+ -  [x] Issue #257
+ -  [ ] Issue #256
+ -  [ ] Issue #255
+ -  [ ] Issue #254
+ -  [ ] Issue #253
+ -  [ ] Issue #252
+ -  [ ] Issue #251
+ -  [ ] Issue #250
+ -  [x] Issue #249
+ -  [ ] Issue #248
+ -  [x] Issue #247
+ -  [ ] Issue #246
+ -  [ ] Issue #245
+ -  [ ] Issue #244
+ -  [ ] Issue #243
+ -  [ ] Issue #242
+ -  [ ] Issue #241
+ -  [ ] Issue #240
  -  [ ] Issue #239
- -  [ ] Issue #238
+ -  [x] Issue #238
  -  [ ] Issue #237
  -  [ ] Issue #236
  -  [ ] Issue #235
@@ -14,40 +161,40 @@
  -  [ ] Issue #229
  -  [ ] Issue #228
  -  [ ] Issue #227
- -  [ ] Issue #226
+ -  [x] Issue #226
  -  [ ] Issue #225
- -  [ ] Issue #224
+ -  [x] Issue #224
  -  [ ] Issue #223
  -  [ ] Issue #222
  -  [ ] Issue #221
- -  [ ] Issue #220
+ -  [x] Issue #220
  -  [ ] Issue #219
  -  [ ] Issue #218
  -  [ ] Issue #217
  -  [ ] Issue #216
- -  [ ] Issue #215
+ -  [x] Issue #215
  -  [ ] Issue #214
  -  [ ] Issue #213
  -  [ ] Issue #212
  -  [ ] Issue #211
  -  [ ] Issue #210
  -  [ ] Issue #209
- -  [ ] Issue #208
+ -  [x] Issue #208
  -  [ ] Issue #207
- -  [ ] Issue #206
- -  [ ] Issue #205
+ -  [x] Issue #206
+ -  [x] Issue #205
  -  [ ] Issue #204
  -  [ ] Issue #203
- -  [ ] Issue #202
+ -  [x] Issue #202
  -  [ ] Issue #201
  -  [ ] Issue #200
  -  [ ] Issue #199
  -  [ ] Issue #198
  -  [ ] Issue #197
  -  [ ] Issue #196
- -  [ ] Issue #195
+ -  [x] Issue #195
  -  [ ] Issue #194
- -  [ ] Issue #193
+ -  [x] Issue #193
  -  [ ] Issue #192
  -  [ ] Issue #191
  -  [ ] Issue #190
@@ -66,7 +213,7 @@
  -  [ ] Issue #177
  -  [ ] Issue #176
  -  [ ] Issue #175
- -  [ ] Issue #174
+ -  [x] Issue #174
  -  [ ] Issue #173
  -  [ ] Issue #172
  -  [ ] Issue #171
@@ -89,84 +236,84 @@
  -  [ ] Issue #154
  -  [ ] Issue #153
  -  [ ] Issue #152
- -  [ ] Issue #151
+ -  [x] Issue #151
  -  [ ] Issue #150
  -  [ ] Issue #149
  -  [ ] Issue #148
  -  [ ] Issue #147
  -  [ ] Issue #146
- -  [ ] Issue #145
- -  [ ] Issue #144
+ -  [x] Issue #145
+ -  [x] Issue #144
  -  [ ] Issue #143
- -  [ ] Issue #142
- -  [ ] Issue #141
- -  [ ] Issue #140
+ -  [x] Issue #142
+ -  [x] Issue #141
+ -  [x] Issue #140
  -  [ ] Issue #139
- -  [ ] Issue #138
+ -  [x] Issue #138
  -  [ ] Issue #137
  -  [ ] Issue #136
  -  [ ] Issue #135
  -  [ ] Issue #134
  -  [ ] Issue #133
- -  [ ] Issue #132
+ -  [x] Issue #132
  -  [ ] Issue #131
  -  [ ] Issue #130
- -  [ ] Issue #129
+ -  [x] Issue #129
  -  [ ] Issue #128
  -  [ ] Issue #127
  -  [ ] Issue #126
  -  [ ] Issue #125
- -  [ ] Issue #124
+ -  [x] Issue #124
  -  [ ] Issue #123
  -  [ ] Issue #122
  -  [ ] Issue #121
- -  [ ] Issue #120
- -  [ ] Issue #119
+ -  [x] Issue #120
+ -  [x] Issue #119
  -  [ ] Issue #118
  -  [ ] Issue #117
- -  [ ] Issue #116
- -  [ ] Issue #115
- -  [ ] Issue #114
+ -  [x] Issue #116
+ -  [x] Issue #115
+ -  [x] Issue #114
  -  [ ] Issue #113
  -  [ ] Issue #112
  -  [ ] Issue #111
- -  [ ] Issue #110
- -  [ ] Issue #109
- -  [ ] Issue #108
+ -  [x] Issue #110
+ -  [x] Issue #109
+ -  [x] Issue #108
  -  [ ] Issue #107
  -  [ ] Issue #106
  -  [ ] Issue #105
  -  [ ] Issue #104
- -  [ ] Issue #103
- -  [ ] Issue #102
+ -  [x] Issue #103
+ -  [x] Issue #102
  -  [ ] Issue #101
  -  [ ] Issue #100
  -  [ ] Issue #99
- -  [ ] Issue #98
+ -  [x] Issue #98
  -  [ ] Issue #97
- -  [ ] Issue #96
+ -  [x] Issue #96
  -  [ ] Issue #95
- -  [ ] Issue #94
+ -  [x] Issue #94
  -  [ ] Issue #93
- -  [ ] Issue #92
- -  [ ] Issue #91
- -  [ ] Issue #90
- -  [ ] Issue #89
- -  [ ] Issue #88
- -  [ ] Issue #87
+ -  [x] Issue #92
+ -  [x] Issue #91
+ -  [x] Issue #90
+ -  [x] Issue #89
+ -  [x] Issue #88
+ -  [x] Issue #87
  -  [ ] Issue #86
  -  [ ] Issue #85
- -  [ ] Issue #84
- -  [ ] Issue #83
- -  [ ] Issue #82
- -  [ ] Issue #81
+ -  [x] Issue #84
+ -  [x] Issue #83
+ -  [x] Issue #82
+ -  [x] Issue #81
  -  [ ] Issue #80
  -  [ ] Issue #79
- -  [ ] Issue #78
- -  [ ] Issue #77
+ -  [x] Issue #78
+ -  [x] Issue #77
  -  [ ] Issue #76
- -  [ ] Issue #75
- -  [ ] Issue #74
+ -  [x] Issue #75
+ -  [x] Issue #74
  -  [ ] Issue #73
  -  [ ] Issue #72
  -  [ ] Issue #71
@@ -175,68 +322,68 @@
  -  [ ] Issue #68
  -  [ ] Issue #67
  -  [ ] Issue #66
- -  [ ] Issue #65
+ -  [x] Issue #65
  -  [ ] Issue #64
- -  [ ] Issue #63
- -  [ ] Issue #62
+ -  [x] Issue #63
+ -  [x] Issue #62
  -  [ ] Issue #61
  -  [ ] Issue #60
- -  [ ] Issue #59
- -  [ ] Issue #58
- -  [ ] Issue #57
+ -  [x] Issue #59
+ -  [x] Issue #58
+ -  [x] Issue #57
  -  [ ] Issue #56
- -  [ ] Issue #55
+ -  [x] Issue #55
  -  [ ] Issue #54
  -  [ ] Issue #53
  -  [ ] Issue #52
  -  [ ] Issue #51
- -  [ ] Issue #50
+ -  [x] Issue #50
  -  [ ] Issue #49
  -  [ ] Issue #48
  -  [ ] Issue #47
  -  [ ] Issue #46
- -  [ ] Issue #45
+ -  [x] Issue #45
  -  [ ] Issue #44
  -  [ ] Issue #43
  -  [ ] Issue #42
  -  [ ] Issue #41
  -  [ ] Issue #40
- -  [ ] Issue #39
- -  [ ] Issue #38
+ -  [x] Issue #39
+ -  [x] Issue #38
  -  [ ] Issue #37
  -  [ ] Issue #36
- -  [ ] Issue #35
+ -  [x] Issue #35
  -  [ ] Issue #34
- -  [ ] Issue #33
- -  [ ] Issue #32
+ -  [x] Issue #33
+ -  [x] Issue #32
  -  [ ] Issue #31
- -  [ ] Issue #30
- -  [ ] Issue #29
+ -  [x] Issue #30
+ -  [x] Issue #29
  -  [ ] Issue #28
- -  [ ] Issue #27
+ -  [x] Issue #27
  -  [ ] Issue #26
  -  [ ] Issue #25
  -  [ ] Issue #24
  -  [ ] Issue #23
- -  [ ] Issue #22
- -  [ ] Issue #21
- -  [ ] Issue #20
+ -  [x] Issue #22
+ -  [x] Issue #21
+ -  [x] Issue #20
  -  [ ] Issue #19
  -  [ ] Issue #18
- -  [ ] Issue #17
+ -  [x] Issue #17
  -  [ ] Issue #16
- -  [ ] Issue #15
+ -  [x] Issue #15
  -  [ ] Issue #14
  -  [ ] Issue #13
- -  [ ] Issue #12
+ -  [x] Issue #12
  -  [ ] Issue #11
- -  [ ] Issue #10
+ -  [x] Issue #10
  -  [ ] Issue #9
- -  [ ] Issue #8
+ -  [x] Issue #8
  -  [ ] Issue #7
- -  [ ] Issue #6
- -  [ ] Issue #5
- -  [ ] Issue #4
+ -  [x] Issue #6
+ -  [x] Issue #5
+ -  [x] Issue #4
  -  [ ] Issue #3
  -  [ ] Issue #2
  -  [ ] Issue #1
