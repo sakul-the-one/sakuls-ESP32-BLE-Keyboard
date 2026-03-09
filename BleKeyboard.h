@@ -28,8 +28,9 @@
 #define hidService                  getHidService
 #define inputReport                 getInputReport
 #define outputReport                getOutputReport
-#define manufacturer                setManufacturer
+//#define manufacturer()->setValue(    setManufacturer
 #define hidInfo                     setHidInfo
+#define pnp                         setPnp
 #define reportMap                   setReportMap
 
 #else
