@@ -17,13 +17,21 @@
 #include "NimBLEServer.h"
 #include "NimBLECharacteristic.h"
 
-#define BLEDevice                  NimBLEDevice
-#define BLEServerCallbacks         NimBLEServerCallbacks
-#define BLECharacteristicCallbacks NimBLECharacteristicCallbacks
-#define BLEHIDDevice               NimBLEHIDDevice
-#define BLECharacteristic          NimBLECharacteristic
-#define BLEAdvertising             NimBLEAdvertising
-#define BLEServer                  NimBLEServer
+#define BLEDevice                   NimBLEDevice
+#define BLEServerCallbacks          NimBLEServerCallbacks
+#define BLECharacteristicCallbacks  NimBLECharacteristicCallbacks
+#define BLEHIDDevice                NimBLEHIDDevice
+#define BLECharacteristic           NimBLECharacteristic
+#define BLEAdvertising              NimBLEAdvertising
+#define BLEServer                   NimBLEServer
+#define setScanResponse             setScanResponseData
+#define hidService                  getHidService
+#define inputReport                 getInputReport
+#define outputReport                getOutputReport
+//#define manufacturer()->setValue(    setManufacturer
+#define hidInfo                     setHidInfo
+#define pnp                         setPnp
+#define reportMap                   setReportMap
 
 #else
 
@@ -144,8 +152,13 @@ private:
   BLEAdvertising*    advertising;
   KeyReport          _keyReport;
   MediaKeyReport     _mediaKeyReport;
-  String        deviceName;
-  String        deviceManufacturer;
+  #if defined(USE_NIMBLE)
+  std::string              deviceName;
+  std::string              deviceManufacturer;
+  #else
+  String              deviceName;
+  String              deviceManufacturer;
+  #endif
   uint8_t            batteryLevel;
   bool               connected = false;
   uint32_t           _delay_ms = 7;
@@ -156,7 +169,11 @@ private:
   uint16_t version   = 0x0210;
 
 public:
+#if defined(USE_NIMBLE)
+  BleKeyboard(std::string deviceName = "ESP32 Keyboard", std::string deviceManufacturer = "Espressif", uint8_t batteryLevel = 100);
+#else
   BleKeyboard(String deviceName = "ESP32 Keyboard", String deviceManufacturer = "Espressif", uint8_t batteryLevel = 100);
+#endif
   void begin(void);
   void end(void);
   void sendReport(KeyReport* keys);
@@ -171,7 +188,11 @@ public:
   void releaseAll(void);
   bool isConnected(void);
   void setBatteryLevel(uint8_t level);
+#if defined(USE_NIMBLE)
+  void setName(std::string deviceName);  
+#else
   void setName(String deviceName);  
+#endif
   void setDelay(uint32_t ms);
 
   void set_vendor_id(uint16_t vid);
