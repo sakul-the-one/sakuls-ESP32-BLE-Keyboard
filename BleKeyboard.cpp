@@ -139,7 +139,7 @@ void BleKeyboard::begin(void)
 #else
 
   BLESecurity* pSecurity = new BLESecurity();
-  pSecurity->setAuthenticationMode(ESP_LE_AUTH_REQ_SC_MITM_BOND);
+  pSecurity->setAuthenticationMode(ESP_LE_AUTH_REQ_SC_MITM_BOND); //Needs to be on Bond, otherwise OS will not save key :/
 
 #endif // USE_NIMBLE
 
@@ -150,10 +150,20 @@ void BleKeyboard::begin(void)
 	advertising = pServer->getAdvertising();
 	advertising->setAppearance(HID_KEYBOARD);
 	advertising->addServiceUUID(hid->hidService()->getUUID());
+#ifdef USE_NIMBLE
 	advertising->setName(deviceName);
-#ifndef USE_NIMBLE
-	advertising->setScanResponse(false);
+#else
+	//Somehow advertising doesnt have a setName function without Nimble???? https://github.com/espressif/arduino-esp32/blob/5f331d3d5142385df6c087ef439e0b0ba7bfc124/libraries/BLE/src/BLEAdvertising.h#L196
+	//BUT it exsist: https://github.com/espressif/arduino-esp32/blob/5f331d3d5142385df6c087ef439e0b0ba7bfc124/libraries/BLE/src/BLEAdvertising.cpp#L1468
+	//And I still havent found a replacement function...
+	BLEAdvertisementData scanResp;
+
+	scanResp.setName(deviceName);
+
+	advertising->setScanResponseData(scanResp);
 #endif
+	advertising->setScanResponse(false);
+
 	advertising->start();
 	hid->setBatteryLevel(batteryLevel);
 

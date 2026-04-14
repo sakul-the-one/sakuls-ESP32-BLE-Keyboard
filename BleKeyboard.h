@@ -32,15 +32,17 @@
 #define hidInfo                     setHidInfo
 #define pnp                         setPnp
 #define reportMap                   setReportMap
+#define setScanResponse             enableScanResponse
 
 #else
 
 #include "BLEHIDDevice.h"
 #include "BLECharacteristic.h"
+#include "BLEAdvertising.h"
 
 #endif // USE_NIMBLE
 
-//#include "Print.h"
+#include "Print.h"
 
 #define BLE_KEYBOARD_VERSION "0.0.4"
 #define BLE_KEYBOARD_VERSION_MAJOR 0

@@ -9,12 +9,14 @@ You might also be interested in:
 - [ESP32-BLE-Gamepad](https://github.com/lemmingDev/ESP32-BLE-Gamepad)
 - [Original Code](https://github.com/T-vK/ESP32-BLE-Keyboard)
 
+## Latest tested Version:
+ - Nimble 2.5.0
+ - Espressif 3.3.8
+
 
 ## Features
- - [x] Optimization with NumBLE
- - [x] Works for 3.3.7
- - [x] Works for 3.3.5
- - [x] Works for 3.0.0
+ - [x] Optimization with NimBLE
+ - [ ] Works without NimBLE (Yes, I broke it...)
  - [x] Send key strokes
  - [x] Send text
  - [x] Press/release individual keys
@@ -136,8 +138,8 @@ Flash: [========  ]  83% (used 1089819 bytes from 1310720 bytes)
 
 **NimBLE mode**
 ```
-RAM:   [=         ]  12% (used 40964 bytes from 327680 bytes)
-Flash: [========= ]  85% (used 1126287 bytes from 1310720 bytes)
+RAM:   [=         ]  10% (used 35904 bytes from 327680 bytes)
+Flash: [=====     ]  46% (used 607268 bytes from 1310720 bytes)
 ```
 
 ### Comparison (SendKeyStrokes.ino at run-time)
@@ -171,3 +173,4 @@ build_flags =
 Credits to [chegewara](https://github.com/chegewara) and [the authors of the USB keyboard library](https://github.com/arduino-libraries/Keyboard/) as this project is heavily based on their work!  
 Also, credits to [duke2421](https://github.com/T-vK/ESP32-BLE-Keyboard/issues/1) who helped a lot with testing, debugging and fixing the device descriptor!
 And credits to [sivar2311](https://github.com/sivar2311) for adding NimBLE support, greatly reducing the memory footprint, fixing advertising issues and for adding the `setDelay` method.
+Also Credits for  [T-vk](https://github.com/T-vK/ESP32-BLE-Keyboard), who created this Libary the first place
