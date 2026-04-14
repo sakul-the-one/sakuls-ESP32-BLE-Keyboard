@@ -162,7 +162,12 @@ void BleKeyboard::begin(void)
 
 void BleKeyboard::end(void)
 {
+	BLEDevice::deinit();
+#ifdef USE_NIMBLE
 
+#else
+ 	
+#endif
 }
 
 bool BleKeyboard::isConnected(void) {
@@ -549,14 +554,16 @@ void BleKeyboard::onDisconnect(BLEServer* pServer, NimBLEConnInfo& connInfo, int
   this->connected = false;
 
 #if !defined(USE_NIMBLE)
-
+	//Normal
   BLE2902* desc = (BLE2902*)this->inputKeyboard->getDescriptorByUUID(BLEUUID((uint16_t)0x2902));
   desc->setNotifications(false);
   desc = (BLE2902*)this->inputMediaKeys->getDescriptorByUUID(BLEUUID((uint16_t)0x2902));
   desc->setNotifications(false);
-
-  advertising->start();
-
+	//This disables Notifications...
+  //advertising->start();
+#else
+//Nimble:
+	//Not needed, since Client does the work!
 #endif // !USE_NIMBLE
 }
 #ifndef USE_NIMBLE

@@ -63,6 +63,7 @@
 #define KEY_BACKSPACE (uint8_t) 0xB2
 #define KEY_TAB (uint8_t) 0xB3
 #define KEY_RETURN (uint8_t) 0xB0
+#define KEY_ENTER KEY_RETURN
 #define KEY_ESC (uint8_t) 0xB1
 #define KEY_INSERT (uint8_t) 0xD1
 #define KEY_PRTSC (uint8_t) 0xCE
